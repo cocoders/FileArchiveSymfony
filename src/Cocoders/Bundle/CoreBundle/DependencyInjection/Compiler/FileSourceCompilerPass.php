@@ -25,7 +25,7 @@ class FileSourceCompilerPass implements CompilerPassInterface
         foreach ($taggedServices as $id => $tagAttributes) {
             foreach ($tagAttributes as $attributes) {
                 $definition->addMethodCall(
-                    'register',
+                    'registerFileSource',
                     array($attributes['alias'], new Reference($id))
                 );
             }

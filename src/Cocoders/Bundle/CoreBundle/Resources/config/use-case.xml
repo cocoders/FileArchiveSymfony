@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="cocoders_file_archive.use_case.create_archive.class">Cocoders\UseCase\CreateArchive\CreateArchiveUseCase</parameter>
+    </parameters>
+
+    <services>
+        <service id="cocoders_file_archive.use_case.create_archive"
+                 class="%cocoders_file_archive.use_case.create_archive.class%">
+            <argument type="service" id="cocoders_file_archive.file_source.registry"/>
+            <argument type="service" id="cocoders_file_archive.archive.factory"/>
+            <argument type="service" id="cocoders_file_archive.archive.repository"/>
+        </service>
+    </services>
+</container>

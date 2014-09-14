@@ -1,0 +1,8 @@
+cocoders_console_command:
+    resource: "@CocodersConsoleCommandBundle/Resources/config/routing.xml"
+    prefix:   /
+
+cocoders_core:
+    resource: "@CocodersCoreBundle/Resources/config/routing.xml"
+    prefix:   /
+

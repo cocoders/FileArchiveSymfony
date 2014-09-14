@@ -59,6 +59,13 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+        mappings:
+            DoctrineAdapter:
+                type: xml
+                is_bundle: false
+                dir: %kernel.root_dir%/../src/Cocoders/DoctrineAdapter/config
+                prefix: Cocoders\DoctrineAdapter
+                alias: FileArchive
 
 # Swiftmailer Configuration
 swiftmailer:

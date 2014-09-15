@@ -6,6 +6,7 @@
 
     <parameters>
         <parameter key="cocoders_file_archive.file_source.dummy.class">Cocoders\FileSource\DummyFileSource\DummyFileSource</parameter>
+        <parameter key="cocoders_file_archive.file_source.gaufrette.class">Cocoders\FileSource\GaufretteFileSource\GaufretteFileSource</parameter>
     </parameters>
     <services>
         <service id="cocoders_file_archive.file_source.dummy"
@@ -15,6 +16,12 @@
                 <argument>/home/cocoders/aaa/b.jpg</argument>
             </argument>
             <tag name="cocoders_file_archive.file_source" alias="dummy"/>
+        </service>
+        <service id="cocoders_file_archive.file_source.gaufrette"
+                 class="%cocoders_file_archive.file_source.gaufrette.class%">
+            <argument type="service" id="local_file_system"/>
+            <argument>/tmp</argument>
+            <tag name="cocoders_file_archive.file_source" alias="gaufrette_local"/>
         </service>
     </services>
 </container>

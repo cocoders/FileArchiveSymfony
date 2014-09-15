@@ -28,6 +28,6 @@ class CocodersCoreExtension extends Extension
         $loader->load('file-source.xml');
         $loader->load('use-case.xml');
         $loader->load('my-file-source.xml');
-//        $loader->load('doctrine-orm.xml');
+        $loader->load('doctrine-orm.xml');
     }
 }

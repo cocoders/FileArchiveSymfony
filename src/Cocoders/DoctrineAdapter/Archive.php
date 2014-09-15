@@ -15,7 +15,7 @@ class Archive implements BaseArchive
     function __construct($name, array $files)
     {
         $this->name = $name;
-        $this->files = new ArrayCollection($files);
+        $this->files = $files;
     }
 
 

@@ -60,6 +60,6 @@ class CreateArchive extends Command implements CreateArchiveResponder
      */
     public function archiveAlreadyExists($name)
     {
-        $this->output->writeln('<error>Archive: '.$name. ' already exists </error>');
+        $this->output->writeln(sprintf('<error>Archive: %s already exists </error>', $name));
     }
 }

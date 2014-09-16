@@ -4,6 +4,7 @@ namespace Cocoders\DoctrineAdapter;
 
 use Cocoders\Archive\Archive as BaseArchive;
 use Cocoders\Archive\ArchiveFile;
+use Doctrine\Common\Collections\ArrayCollection;
 
 class Archive implements BaseArchive
 {
@@ -11,7 +12,7 @@ class Archive implements BaseArchive
     private $name;
     private $files;
 
-    public function __construct($name, array $files)
+    function __construct($name, array $files)
     {
         $this->name = $name;
         $this->files = $files;

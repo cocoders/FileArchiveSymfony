@@ -20,7 +20,7 @@
         <service id="cocoders_file_archive.file_source.gaufrette"
                  class="%cocoders_file_archive.file_source.gaufrette.class%">
             <argument type="service" id="local_file_system"/>
-            <argument>/tmp/</argument>
+            <argument>/tmp</argument>
             <tag name="cocoders_file_archive.file_source" alias="gaufrette_local"/>
         </service>
     </services>

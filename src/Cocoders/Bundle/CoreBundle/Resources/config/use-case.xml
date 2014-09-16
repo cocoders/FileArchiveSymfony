@@ -5,7 +5,6 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <parameters>
         <parameter key="cocoders_file_archive.use_case.create_archive.class">Cocoders\UseCase\CreateArchive\CreateArchiveUseCase</parameter>
-        <parameter key="cocoders_file_archive.use_case.upload_archive.class">Cocoders\UseCase\UploadArchive\UploadArchiveUseCase</parameter>
         <parameter key="cocoders_file_archive.use_case.archive_list.class">Cocoders\UseCase\ArchiveList\ArchiveListUseCase</parameter>
     </parameters>
 
@@ -19,13 +18,6 @@
 
         <service id="cocoders_file_archive.use_case.archive_list"
                  class="%cocoders_file_archive.use_case.archive_list.class%">
-            <argument type="service" id="cocoders_file_archive.archive.repository"/>
-        </service>
-
-        <service id="cocoders_file_archive.use_case.upload_archive"
-                 class="%cocoders_file_archive.use_case.upload_archive.class%">
-            <argument type="service" id="cocoders_file_archive.uploaded_archive.factory"/>
-            <argument type="service" id="cocoders_file_archive.upload_provider.registry"/>
             <argument type="service" id="cocoders_file_archive.archive.repository"/>
         </service>
     </services>

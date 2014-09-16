@@ -24,14 +24,10 @@ class CocodersCoreExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('in-memory.xml');
-        $loader->load('dropbox-oauth.xml');
         $loader->load('archive.xml');
-        $loader->load('uploaded-archive.xml');
-        $loader->load('upload-provider.xml');
         $loader->load('file-source.xml');
         $loader->load('use-case.xml');
         $loader->load('my-file-source.xml');
-        $loader->load('my-upload-provider.xml');
         $loader->load('doctrine-orm.xml');
     }
 }

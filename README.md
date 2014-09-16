@@ -21,3 +21,7 @@ Then, use the `install` command in project root to install application:
 Create archive command:
 
     php app/console filearchive:archive:create . --name="test" -fdummy
+
+List existing archives command:
+
+    php app/console filearchive:archive:list

@@ -53,4 +53,13 @@ class CreateArchive extends Command implements CreateArchiveResponder
     {
         $this->output->writeln('Finished creation of '.$name. ' archive');
     }
+
+    /**
+     * @param string $name
+     * @return mixed
+     */
+    public function archiveAlreadyExists($name)
+    {
+        $this->output->writeln('<error>Archive: '.$name. ' already exists </error>');
+    }
 }

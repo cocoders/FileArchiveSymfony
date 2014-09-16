@@ -5,10 +5,10 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="cocoders_file_archive.file_source.registry.class">Cocoders\FileSource\InMemoryFileSource\InMemoryFileSourceRegistry</parameter>
         <parameter key="cocoders_file_archive.archive.factory.class">Cocoders\DoctrineAdapter\ArchiveFactory</parameter>
         <parameter key="cocoders_file_archive.archive.repository.class">Cocoders\DoctrineAdapter\ArchiveRepository</parameter>
         <parameter key="cocoders_file_archive.archive.class">Cocoders\DoctrineAdapter\Archive</parameter>
+        <parameter key="cocoders_file_archive.uploaded_archive.factory.class">Cocoders\DoctrineAdapter\UploadedArchiveFactory</parameter>
     </parameters>
 
     <services>

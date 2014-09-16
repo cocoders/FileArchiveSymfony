@@ -8,5 +8,7 @@
         <parameter key="cocoders_file_archive.file_source.registry.class">Cocoders\FileSource\InMemoryFileSource\InMemoryFileSourceRegistry</parameter>
         <parameter key="cocoders_file_archive.archive.factory.class">Cocoders\Archive\InMemoryArchive\InMemoryArchiveFactory</parameter>
         <parameter key="cocoders_file_archive.archive.repository.class">Cocoders\Archive\InMemoryArchive\InMemoryArchiveRepository</parameter>
+        <parameter key="cocoders_file_archive.uploaded_archive.factory.class">Cocoders\Upload\UploadedArchive\InMemoryUploadedArchive\InMemoryUploadedArchiveFactory</parameter>
+        <parameter key="cocoders_file_archive.upload_provider.registry.class">Cocoders\Upload\UploadProvider\InMemoryUploadProvider\InMemoryUploadProvider</parameter>
     </parameters>
 </container>

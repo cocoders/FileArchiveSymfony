@@ -7,12 +7,19 @@
     <parameters>
         <parameter key="cocoders_file_archive.command.create_archive.class">Cocoders\Bundle\ConsoleCommandBundle\Command\CreateArchive</parameter>
         <parameter key="cocoders_file_archive.command.archive_list.class">Cocoders\Bundle\ConsoleCommandBundle\Command\ArchiveList</parameter>
+        <parameter key="cocoders_file_archive.command.upload_archive.class">Cocoders\Bundle\ConsoleCommandBundle\Command\UploadArchive</parameter>
     </parameters>
 
     <services>
         <service id="cocoders_file_archive.command.create_archive"
                  class="%cocoders_file_archive.command.create_archive.class%">
             <argument type="service" id="cocoders_file_archive.use_case.create_archive"/>
+            <tag name="console.command" />
+        </service>
+
+        <service id="cocoders_file_archive.command.upload_archive"
+                 class="%cocoders_file_archive.command.upload_archive.class%">
+            <argument type="service" id="cocoders_file_archive.use_case.upload_archive"/>
             <tag name="console.command" />
         </service>
 

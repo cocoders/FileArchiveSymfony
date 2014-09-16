@@ -20,7 +20,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "cocoders/file-archive": "dev-master@dev",
         "knplabs/knp-gaufrette-bundle": "0.2.*@dev",
-        "knplabs/gaufrette": "0.2.*@dev"
+        "knplabs/gaufrette": "0.2.*@dev",
+        "dropbox-php/dropbox-php": "dev-master@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

@@ -81,7 +81,14 @@ knp_gaufrette:
             local:
                 directory:  /
                 create:     false
+        my_gaufrette_dropbox:
+            dropbox:
+                api_id: cocoders_file_archive.dropbox.api
     filesystems:
         my_file_system:
             adapter:    my_root_local
             alias:      local_file_system
+        my_dropbox_system:
+            adapter:    my_gaufrette_dropbox
+            alias:      dropbox_file_system
+

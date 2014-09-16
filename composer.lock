@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocoders/FileArchive.git",
-                "reference": "85d9af9b8210c1d79a31852a56cbfd328700b530"
+                "reference": "ce64094d0b6babef3a964337720bb91a00218bc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocoders/FileArchive/zipball/85d9af9b8210c1d79a31852a56cbfd328700b530",
-                "reference": "85d9af9b8210c1d79a31852a56cbfd328700b530",
+                "url": "https://api.github.com/repos/cocoders/FileArchive/zipball/ce64094d0b6babef3a964337720bb91a00218bc7",
+                "reference": "ce64094d0b6babef3a964337720bb91a00218bc7",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 }
             ],
             "description": "File archive project for backup pictures and other files in the clouds",
-            "time": "2014-09-14 21:21:12"
+            "time": "2014-09-16 21:45:28"
         },
         {
             "name": "doctrine/annotations",

@@ -27,6 +27,7 @@
             <argument type="service" id="cocoders_file_archive.uploaded_archive.factory"/>
             <argument type="service" id="cocoders_file_archive.upload_provider.registry"/>
             <argument type="service" id="cocoders_file_archive.archive.repository"/>
+            <argument type="service" id="cocoders_file_archive.uploaded_archive.repository"/>
         </service>
     </services>
 </container>

@@ -9,6 +9,7 @@
             <generator strategy="AUTO" />
         </id>
         <field name="name" type="string" length="100" />
+        <field name="uploaded" type="boolean" />
         <field name="files" type="array" />
     </entity>
 </doctrine-mapping>

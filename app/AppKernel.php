@@ -20,6 +20,7 @@ class AppKernel extends Kernel
 
             new Cocoders\Bundle\CoreBundle\CocodersCoreBundle(),
             new Cocoders\Bundle\ConsoleCommandBundle\CocodersConsoleCommandBundle(),
+            new Cocoders\Bundle\WebBundle\CocodersWebBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

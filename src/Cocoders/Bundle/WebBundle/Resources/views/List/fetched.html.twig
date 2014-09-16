@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}List of archives{% endblock %}
+
+{% block body %}
+    <table>
+    {% for item in items %}
+        <tr>
+        <td>{{ item.archiveName }}</td>
+        <td>
+            {% if item.uploaded %}
+                uploaded
+            {% endif %}
+        </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

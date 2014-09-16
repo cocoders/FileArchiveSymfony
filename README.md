@@ -21,6 +21,7 @@ Then, use the `install` command in project root to install application:
 Create archive command:
 
     php app/console filearchive:archive:create . --name="archiveName" -fdummy
+    php app/console filearchive:archive:create M2M_Architecture.png --name="mynew" -fgaufrette_local
 
 List existing archives command:
 
